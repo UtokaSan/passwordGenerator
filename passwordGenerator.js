@@ -5,7 +5,7 @@ const length = document.querySelector("#length");
 
 const result = document.querySelector(".result1");
 
-const letter = "abcdefghijkmnopqrstuwxyzABCDEFGHIJKMNOPQRSTUWXYZ";
+const letter = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ";
 const numbers = "0123456789";
 const symbols = "?/^$%#~*£"; 
 
@@ -28,7 +28,7 @@ inputGenerator.addEventListener("click", () => {
     if (length.value == typeof '') {
         return 0;
     } else {
-        result.innerHTML = generatorPassword(str, length.value);
+        result.innerHTML = generatorPassword(alpha, length.value);
     }
 });
 
