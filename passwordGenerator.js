@@ -13,7 +13,7 @@ function generatorPassword (str, nb) {
     let result = "";
 
     for (i = 0; i < nb; i++) {
-        result = result + str.charAt(Math.floor(Math.random() * str.length)); 
+        result += str.charAt(Math.floor(Math.random() * str.length)); 
     }
     return result;
 }
