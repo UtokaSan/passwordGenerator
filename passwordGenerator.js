@@ -22,8 +22,8 @@ function generatorPassword (str, nb) {
 inputGenerator.addEventListener("click", () => {
     let alpha = letter;
 
-    inputNumber.checked ? (alpha = alpha + numbers) : "";
-    inputSymbols.checked ? (alpha = alpha + symbols) : "";
+    inputNumber.checked ? (alpha += numbers) : "";
+    inputSymbols.checked ? (alpha += symbols) : "";
 
     if (length.value == typeof '') {
         return 0;
